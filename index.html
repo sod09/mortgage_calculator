@@ -8,21 +8,33 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <label for="loanamount">Loan Amount</label>
+    <label for="loanamount">Loan Amount £</label>
     <input type="number" value="loan-amount" id="loan-amount" class="loan__amount" />
-    <label for="interest-rate">Interest Rate</label>
+
+    <label for="interest-rate">Interest Rate APR%</label>
     <input type="number" value="interest-rate" id="interest-rate" class="interest__rate" />
-    <label for="mortgage-term-example-one">Mortgage Term (years)</label>
+
+    <label for="mortgage-term-example-one">Mortgage Term Example A (years)</label>
     <input type="number" value="mortgage-term" id="mortgage-term-example-one" class="mortgage-term-example-one">
-    <label for="mortgage-term-example-two">Mortgage Term (years)</label>
+    
+    <label for="mortgage-term-example-two">Mortgage Term Example B (years)</label>
     <input type="number" value="mortgage-term" id="mortgage-term-example-two" class="mortgage-term-example-two">
-    <div class="monthly-mortgage-payment-example-one">0</div>
-    <div class="monthly-mortgage-payment-example-two">0</div>
+
+    <div class="header monthly-mortgage-payment-example-one-label">Monthly Cost</div>
+    <div class="monthly-mortgage-payment-example-one-output">0</div>
+
+    <div class="header monthly-mortgage-payment-example-two-label">Monthly Cost</div>
+    <div class="monthly-mortgage-payment-example-two-output">0</div>
 
     <div class="monthly-saving"></div>
 
-    <div class="total-cost-over-mortgage-term-one">0</div>
-    <div class="total-cost-over-mortgage-term-two">0</div>
+    <div class="header total-cost-over-mortgage-term-one-label">Total Cost</div>
+    <div class="total-cost-over-mortgage-term-one-output">0</div>
+    <div class="total-cost-over-mortgage-term-two-label">Total Cost</div>
+    <div class="header total-cost-over-mortgage-term-two-output">0</div>
 
     <div class="totalsaving"></div>
+    <button class="calculator-button">Calculate</button>
+
+    <script src="./script.js""></script>
 </html>
